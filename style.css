@@ -65,6 +65,7 @@ nav {
     font-size: 14px;
     font-weight: 400;
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
 #search-bar.active {
     width: 150px;
