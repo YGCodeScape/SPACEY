@@ -8,34 +8,30 @@ margin: 0;
 padding: 0;
 width: 100%;
 height: 100%;
-}
-.land-page {
-    width: 100%;
-    height: 110vh;
-    background: url(/SpaceY/SPACEY/img/space\ gpt.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(0.9);
-    position: relative;
+position: relative
 }
 
-nav, .navigation-head {
+.land-page {
     width: 100%;
-    height: 70px;
-    z-index: 99;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.navigation {
+    width: 100%;
+    height:auto;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-}
-nav {
+    top: 0;
+    padding: 0 30px;
     margin-top: 10px;
 }
-.navigation-head {
-    padding: 0 30px;
-}
+/* --------------search bar--------- */
 .search-d {
     align-items: center;
     position: relative;
@@ -74,7 +70,7 @@ nav {
     padding: 5px 20px 0 40px;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
-
+/*-------navigation ul---- */
 .n-f-ul {
     display: flex;
     flex-direction: row;
@@ -114,7 +110,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-  border: 2px solid #fffaf3;
+  border: 2px solid #ffffff;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   transform: scaleX(0);
@@ -161,4 +157,54 @@ nav {
 .cond-num i {
     font-size: 22px;
     margin-left: 10px;
+}
+/* -----------------land page text----------------- */
+.land-text {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: url(/SpaceY/SPACEY/img/space\ gpt.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    padding-bottom: 150px;
+}
+.land-text h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    word-spacing: 15px;
+    font-weight: 400;
+    margin-right: 28px;
+}
+/* .margin-span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    word-spacing: 15px;
+    font-weight: 400;
+} */
+.land-text h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/* ---- */
+main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 20%;
 }
