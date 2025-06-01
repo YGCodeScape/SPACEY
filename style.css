@@ -159,7 +159,7 @@ position: relative
     margin-left: 10px;
 }
 /* -----------------land page text----------------- */
-.land-text {
+.land-text-hold {
     width: 100%;
     height: 120vh;
     position: relative;
@@ -174,7 +174,7 @@ position: relative
     background-repeat: no-repeat;
     padding-bottom: 230px;
 }
-.land-text h3{
+.land-text-hold h3{
     color: #fff;
     text-transform: uppercase;
     font-size: 30px;
@@ -184,13 +184,17 @@ position: relative
     margin-right: 28px;
 }
 
-.land-text h1 {
+.land-text-hold h1 {
     color: #ffffff;
     text-transform: uppercase;
     font-size: 65px;
     font-family: "Orbitron", sans-serif;
     font-weight: 600;
     letter-spacing: 10px;
+}
+.land-text-hold h3, .land-text-hold h1, .obj-hold img {
+    transform: scale(0);
+    opacity: 0;
 }
 /*-------------------------object  */
 .obj-hold {
