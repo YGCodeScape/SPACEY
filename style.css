@@ -161,44 +161,51 @@ position: relative
 /* -----------------land page text----------------- */
 .land-text {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    background: url(/SpaceY/SPACEY/img/space\ gpt.png);
+    gap: 5px;
+    background: url(/SpaceY/SPACEY/img/SY\ land-p\ no\ man.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.9);
-    padding-bottom: 150px;
+    padding-bottom: 230px;
 }
 .land-text h3{
     color: #fff;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Orbitron", sans-serif;
-    word-spacing: 15px;
+    word-spacing: 10px;
     font-weight: 400;
     margin-right: 28px;
 }
-/* .margin-span {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: "Orbitron", sans-serif;
-    word-spacing: 15px;
-    font-weight: 400;
-} */
+
 .land-text h1 {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 65px;
     font-family: "Orbitron", sans-serif;
-    font-weight: 700;
-    letter-spacing: 5px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+/*-------------------------object  */
+.obj-hold {
+    width:200px;
+    height:430px;
+    display: flex;
+    position: absolute;
+    top:33%;
+
+}
+.obj-hold img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 /* ---- */
