@@ -9,7 +9,7 @@ padding: 0;
 width: 100%;
 height: 100%;
 position: relative;
-background: #0e0e19;
+background: #0d0d18;
 }
 html {
   scroll-behavior: smooth;
@@ -246,7 +246,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid #674c32;
+    border: 2px solid #f8a95e;
 }
 .launch-sec {
     background: transparent;
@@ -256,7 +256,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border-right: 1px solid #674c32;
+    border-right: 2px solid #f8a95e;
     cursor: pointer;
 }
 .launch-sec span {
@@ -359,4 +359,94 @@ main::after{
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.425) 0%, #0e0e19b6 100%);
   pointer-events: none; /* Let clicks pass through */
   z-index: 9;
+}
+/* ----------------travel cart----- */
+.card-hold {
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.card-content {
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-card {
+    background: url(/SpaceY/SPACEY/img/moon\ surface\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.second-card {
+    background: url(/SpaceY/SPACEY/img/mars\ surface.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.third-card {
+    background: url(/SpaceY/SPACEY/img/gpt\ neptune\ surface.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.planet {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    bottom: 32%;
+}
+.planet-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.planet-cart-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+.planet-cart-content span {
+    font-size: 18px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.planet-cart-content h1 {
+    width: 80%;
+    font-size: 23px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.planet-cart-content button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #f8963b;
+    border: none;
+    outline: none;
+    margin-top: 147px;
+    cursor: pointer;
 }
