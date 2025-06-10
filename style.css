@@ -337,7 +337,7 @@ html {
 }
 .featured-text h1 {
     color: #fff;
-    font-size: 35px;
+    font-size: 30px;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
@@ -371,12 +371,14 @@ main::after{
     gap: 90px;
 }
 .card-content {
-    width: 320px;
+    width: 330px;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
 }
+
 .first-card {
     background: url(/SpaceY/SPACEY/img/moon\ surface\ 2.png);
     background-repeat: no-repeat;
@@ -397,18 +399,21 @@ main::after{
 }
 .planet {
     position: absolute;
-    width: 220px;
-    height: 220px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
-    bottom: 32%;
+    top: 25%;
 }
+
 .planet-img {
     width: 100%;
     height: 100%;
     object-fit: fill;
     border-radius: 50%;
     cursor: pointer;
+    animation: float 2s ease-in-out infinite;
 }
+
 .planet-cart-content {
     display: flex;
     flex-direction: column;
@@ -450,3 +455,177 @@ main::after{
     margin-top: 147px;
     cursor: pointer;
 }
+/* ---------------------- astro suit---section */
+.astro-sec {
+    width: 100%;
+    height: 90vh;
+    margin-top: 150px;
+}
+.astro-hold {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.astro-img-hold {
+    width: 54%;
+    height: 100%;
+}
+.astro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.astro-info-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.astro-info-parts {
+    width: 100%;
+    height: auto;
+}
+.astro-info-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 22px 0;
+}
+.astro-title {
+    display: flex;
+    flex-direction: column;
+}
+.astro-title span, .astro-info-1 span{
+    font-size: 16px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f8963b;
+}
+.astro-title h1 {
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-transform: uppercase;
+}
+.box-bottom-line {
+    width: 100%;
+    height: 2px;
+    background-color: #ffd1a7b7;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.bold-line {
+    width: 80px;
+    height: 4px;
+    background-color: #f8963b;
+    border-radius: 7px;
+}
+.astro-info-2 {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: #e7e5e5e3;
+    width: 80%;
+    margin-left: 60px;
+    padding: 30px 0 40px 0;
+}
+.astro-info-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info-box-hold {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    border-right: 1px solid #f8a95e;
+    border-bottom: 1px solid #f8a95e;
+    border-top: 1px solid #f8a95e;
+}
+.info-box1 {
+border-left: 1px solid #f8a95e;
+}
+.info-box h1 {
+    font-size: 30px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.info-box span {
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #fff;
+}
+.info-box-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bottom-box {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid #f8a95e;
+    border-bottom: 1px solid #f8a95e;
+}
+.bottom-box h1 {
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 37px;
+    text-align: center;
+    border-left: 1px solid #f8a95e;
+}
+.l-btn {
+    background: transparent;
+    outline: none;
+    border-left: 1px solid #f8a95e;
+    border-right: none;
+    border-bottom: none;
+    border-top:none;
+    width: 75px;
+    height: auto;
+}
+.l-btn i {
+    font-size: 35px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+/*----------------------------------------- */
+/* @keyframes float {
+  0% { transform: translateX(0%) translateY(0px); }
+  50% { transform: translateX(0%) translateY(-10px); }
+  100% { transform: translateX(0%) translateY(0px); }
+} */

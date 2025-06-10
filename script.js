@@ -21,70 +21,85 @@ document.addEventListener('click', function (e) {
 
 //--------------- GSAP animation start here.
 
-var tl = gsap.timeline();
+// var tl = gsap.timeline();
 
-// land page gsap animation
-tl.from( ".land-text-hold h3",
-    { scale: -0, opacity: 0 },
-    { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }
-);
-tl.from( ".land-text-hold h1",
-    { scale: -0, opacity: 0 },
-    { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out" }
-);
+// // land page gsap animation
+// tl.from( ".land-text-hold h3",
+//     { scale: -0, opacity: 0 },
+//     { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }
+// );
+// tl.from( ".land-text-hold h1",
+//     { scale: -0, opacity: 0 },
+//     { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out" }
+// );
 
-tl.to(".obj-hold img", {
-    scale: 1,
-    opacity: 1,
-    duration: 1.5,
-    ease: "back.out(1.7)"
-})
-tl.to(".land-text", {
-    scale: 1,
-    opacity: 1,
-    duration: 1,
-    stagger: 1,
-    ease: "back.out(1.7)"
- });
+// tl.to(".obj-hold img", {
+//     scale: 1,
+//     opacity: 1,
+//     duration: 1.5,
+//     ease: "back.out(1.7)"
+// })
+// tl.to(".land-text", {
+//     scale: 1,
+//     opacity: 1,
+//     duration: 1,
+//     stagger: 1,
+//     ease: "back.out(1.7)"
+//  });
 
 
-function breakTheText() {
-    var logoText = document.querySelector(".word-mark");
-    var logoTextContent = logoText.textContent;
-    var splittedText = logoTextContent.split("");
-    var clutter = "";
+// function breakTheText() {
+//     var logoText = document.querySelector(".word-mark");
+//     var logoTextContent = logoText.textContent;
+//     var splittedText = logoTextContent.split("");
+//     var clutter = "";
 
-    splittedText.forEach(function(letter) {
-        clutter += `<span>${letter}</span>`;
-    });
+//     splittedText.forEach(function(letter) {
+//         clutter += `<span>${letter}</span>`;
+//     });
 
-    logoText.innerHTML = clutter;
-}
-breakTheText(); // call the function to work it.
+//     logoText.innerHTML = clutter;
+// }
+// breakTheText(); // call the function to work it.
 
-// navigation gsap
-tl.from(".word-mark span", {  // animation for move that split text.
-  y: -70, 
-  opacity: 0,
-  duration: 1,
-  delay:0.2,
-  stagger:0.15,
-})
+// // navigation gsap
+// tl.from(".word-mark span", {  // animation for move that split text.
+//   y: -70, 
+//   opacity: 0,
+//   duration: 1,
+//   delay:0.2,
+//   stagger:0.15,
+// })
 
-tl.from(".search-d", {
-    top: -150,
-    duration: 0.3,
-})
-tl.from(".n-f-ul li", {
-    y: -150,
-    duration: 0.3,
-    stagger: 0.2,
+// tl.from(".search-d", {
+//     top: -150,
+//     duration: 0.3,
+// })
+// tl.from(".n-f-ul li", {
+//     y: -150,
+//     duration: 0.3,
+//     stagger: 0.2,
+//     opacity: 0,
+// })
+
+// tl.from(".con-d span", {
+//     y: -150,
+//     duration: 0.3,
+//     opacity: 0,
+//     stagger: 0.2,
+// })
+
+ gsap.to(".n-f-ul li", {
+    scrollTrigger: {
+      trigger: ".land-page", // navigation's parent div
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true,
+    },
     opacity: 0,
-})
+    y: -50,
+    duration: 0.5,
+    stagger: 0.1,
+    ease: "power2.out"
+  });
 
-tl.from(".con-d span", {
-    y: -150,
-    duration: 0.3,
-    opacity: 0,
-    stagger: 0.2,
-})
