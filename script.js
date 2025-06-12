@@ -19,33 +19,57 @@ document.addEventListener('click', function (e) {
     }
 });
 
+function pageCursor() {
+  var div = document.querySelector("body");
+var cursor = document.querySelector(".cursor"); 
+
+div.addEventListener("mousemove", function(para){
+  const rect = cursor.getBoundingClientRect();
+  gsap.to(".cursor", {
+    x: para.x,
+    y: para.y,
+    duration: 0.6,
+    ease: "back.out",
+  })
+})
+}
+pageCursor();
+
+  function discoverPlanet() {
+    
+  const liItems = document.querySelectorAll('.p-name-li');
+  const activeBar = document.querySelector('.active-bar');
+
+  function moveActiveBar(target) {
+    const rect = target.getBoundingClientRect();
+    const parentRect = target.parentElement.getBoundingClientRect();
+
+    // Set width and left based on the clicked li
+    activeBar.style.width = `${rect.width}px`;
+    activeBar.style.left = `${rect.left - parentRect.left}px`;
+  }
+
+  // Set initial position on first load
+  moveActiveBar(liItems[1]);
+
+  liItems.forEach((li) => {
+    li.addEventListener('click', (e) => {
+      moveActiveBar(e.target);
+    });
+  });
+
+liItems.forEach((li) => {
+  li.addEventListener('click', (e) => {
+    liItems.forEach(item => item.classList.remove('active'));
+    e.target.classList.add('active');
+    moveActiveBar(e.target);
+  });
+});
+}
+discoverPlanet();
 //--------------- GSAP animation start here.
 
-// var tl = gsap.timeline();
-
-// // land page gsap animation
-// tl.from( ".land-text-hold h3",
-//     { scale: -0, opacity: 0 },
-//     { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }
-// );
-// tl.from( ".land-text-hold h1",
-//     { scale: -0, opacity: 0 },
-//     { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out" }
-// );
-
-// tl.to(".obj-hold img", {
-//     scale: 1,
-//     opacity: 1,
-//     duration: 1.5,
-//     ease: "back.out(1.7)"
-// })
-// tl.to(".land-text", {
-//     scale: 1,
-//     opacity: 1,
-//     duration: 1,
-//     stagger: 1,
-//     ease: "back.out(1.7)"
-//  });
+var tl = gsap.timeline();
 
 
 // function breakTheText() {
@@ -60,7 +84,7 @@ document.addEventListener('click', function (e) {
 
 //     logoText.innerHTML = clutter;
 // }
-// breakTheText(); // call the function to work it.
+// breakTheText();
 
 // // navigation gsap
 // tl.from(".word-mark span", {  // animation for move that split text.
@@ -89,6 +113,30 @@ document.addEventListener('click', function (e) {
 //     stagger: 0.2,
 // })
 
+// // land page gsap animation
+// tl.from( ".land-text-hold h3",
+//     { scale: -0, opacity: 0 },
+//     { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }
+// );
+// tl.from( ".land-text-hold h1",
+//     { scale: -0, opacity: 0 },
+//     { scale: 1, opacity: 1, duration: 0.6, ease: "power2.out" }
+// );
+
+// tl.to(".obj-hold img", {
+//     scale: 1,
+//     opacity: 1,
+//     duration: 1.5,
+//     ease: "back.out(1.7)"
+// })
+// tl.to(".land-text", {
+//     scale: 1,
+//     opacity: 1,
+//     duration: 1,
+//     stagger: 1,
+//     ease: "back.out(1.7)"
+//  });
+
  gsap.to(".n-f-ul li", {
     scrollTrigger: {
       trigger: ".land-page", // navigation's parent div
@@ -102,4 +150,3 @@ document.addEventListener('click', function (e) {
     stagger: 0.1,
     ease: "power2.out"
   });
-
