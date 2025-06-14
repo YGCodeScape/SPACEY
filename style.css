@@ -1022,3 +1022,435 @@ border-left: 1px solid #d6b86d;
   50% { transform: translateX(0%) translateY(-10px); }
   100% { transform: translateX(0%) translateY(0px); }
 } */
+/*-------------------responsive media queries-------- */
+@media screen and (max-width: 1159px) and (min-width: 960px) {
+
+    body {
+        width:1100px;
+    }
+    .navigation {
+        width: 100%;
+        padding:0 10px;
+    }
+    .n-f-ul {
+        margin-left: 50px;
+        gap: 14px;
+    }
+    .n-f-li a  {
+        font-size: 14px;
+    }
+    .n-f-ul h1 {
+        font-size: 30px;
+    }
+    .cond-t {
+        font-size: 8px;
+    }
+    .cond-num, .cond-num i {
+        font-size: 12px;
+    }
+    .land-text-hold h3 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .land-text-hold h1 {
+        font-size: 50px;
+    }
+    .land-text-hold {
+        padding-bottom: 190px;
+    }
+    .launch-sec span {
+        font-size: 14px;
+    }
+    .launch-sec h3 {
+        font-size: 14px;
+    }
+    .five-sec {
+        font: 10px;
+    }
+    .next-launch-hold {
+        margin: 0 50px;
+    }
+    /*  ---card*/
+    .card-hold {
+        gap:50px;
+    }
+    .card-content {
+        width: 300px;
+    }
+    .planet {
+        width: 190px;
+        height:190px;
+    }
+    .planet-cart-content {
+        top: 26%;
+    }
+    .planet-cart-content button {
+        margin-top: 160px;
+    }
+    /* fetured sec---- */
+    .featured-sec {
+        padding: 140px 0;
+    }
+    .planet-discover-sec {
+        padding: 0 60px;
+    }
+    .p-name-ul {
+        gap:40px;
+    }
+    .p-name-li {
+        font-size: 17px;
+    }
+    .planet-info-hold {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .p-info-box {
+        padding: 12px;
+    }
+    /*---------image section */
+    .image-gallery-sec {
+        margin-top: 40%;
+    }
+    .img-frame-box1{
+        width: 28%;
+    }
+    .img-frame-box2, .img-frame-box4 {
+        left: 305px;
+    }
+    .img-frame-box3 {
+        width: 31%;
+    }
+    .g-info-box span {
+        font-size: 14px;
+    }
+    .g-info-box h1 {
+        font-size: 18px;
+    }
+    .l-btn3 {
+        width: 50px;
+    }
+    .l-btn3 i {
+        font-size: 25px;
+    }
+    .img-gallery-info {
+        margin-left: 32%;
+    }
+    .gallery-info-contain2 {
+        padding: 30px 0;
+        font-size: 13px;
+    }
+    .info-box h1, .p-info-box h1 {
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .info-box span, .p-info-box span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .bottom-box h1, .p-bottom-box h1 {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .l-btn, .l-btn2 {
+        width: 65px;
+    }
+    .l-btn i, .l-btn2 i {
+        font-size: 30px;
+    }
+    .img-info-d span {
+        font-size: 14px;
+    }
+    .img-info-d {
+        left: -25%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 760px) {
+
+    body {
+        width:1100px;
+    }
+    .navigation {
+        width: 100%;
+        padding:0 10px;
+    }
+    .n-f-ul {
+        margin-left: 50px;
+        gap: 14px;
+    }
+    .n-f-li a  {
+        font-size: 14px;
+    }
+    .n-f-ul h1 {
+        font-size: 30px;
+    }
+    .cond-t {
+        font-size: 8px;
+    }
+    .cond-num, .cond-num i {
+        font-size: 12px;
+    }
+    .land-text-hold h3 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .land-text-hold h1 {
+        font-size: 50px;
+    }
+    .land-text-hold {
+        padding-bottom: 190px;
+    }
+    .launch-sec span {
+        font-size: 14px;
+    }
+    .launch-sec h3 {
+        font-size: 14px;
+    }
+    .five-sec {
+        font: 10px;
+    }
+    .next-launch-hold {
+        margin: 0 50px;
+    }
+    /*  ---card*/
+    .card-hold {
+        gap:50px;
+    }
+    .card-content {
+        width: 300px;
+    }
+    .planet {
+        width: 190px;
+        height:190px;
+    }
+    .planet-cart-content {
+        top: 26%;
+    }
+    .planet-cart-content button {
+        margin-top: 160px;
+    }
+    /* fetured sec---- */
+    .featured-sec {
+        padding: 140px 0;
+    }
+    .planet-discover-sec {
+        padding: 0 60px;
+    }
+    .p-name-ul {
+        gap:40px;
+    }
+    .p-name-li {
+        font-size: 17px;
+    }
+    .planet-info-hold {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .p-info-box {
+        padding: 12px;
+    }
+    /*---------image section */
+    .image-gallery-sec {
+        margin-top: 40%;
+    }
+    .img-frame-box1{
+        width: 28%;
+    }
+    .img-frame-box2, .img-frame-box4 {
+        left: 305px;
+    }
+    .img-frame-box3 {
+        width: 31%;
+    }
+    .g-info-box span {
+        font-size: 14px;
+    }
+    .g-info-box h1 {
+        font-size: 18px;
+    }
+    .l-btn3 {
+        width: 50px;
+    }
+    .l-btn3 i {
+        font-size: 25px;
+    }
+    .img-gallery-info {
+        margin-left: 32%;
+    }
+    .gallery-info-contain2 {
+        padding: 30px 0;
+        font-size: 13px;
+    }
+    .info-box h1, .p-info-box h1 {
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .info-box span, .p-info-box span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .bottom-box h1, .p-bottom-box h1 {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .l-btn, .l-btn2 {
+        width: 65px;
+    }
+    .l-btn i, .l-btn2 i {
+        font-size: 30px;
+    }
+    .img-info-d span {
+        font-size: 14px;
+    }
+    .img-info-d {
+        left: -25%;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 759px) and (min-width: 480px) {
+
+    body {
+        width:1100px;
+    }
+    .navigation {
+        width: 100%;
+        padding:0 10px;
+    }
+    .n-f-ul {
+        margin-left: 50px;
+        gap: 14px;
+    }
+    .n-f-li a  {
+        font-size: 14px;
+    }
+    .n-f-ul h1 {
+        font-size: 30px;
+    }
+    .cond-t {
+        font-size: 8px;
+    }
+    .cond-num, .cond-num i {
+        font-size: 12px;
+    }
+    .land-text-hold h3 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .land-text-hold h1 {
+        font-size: 50px;
+    }
+    .land-text-hold {
+        padding-bottom: 190px;
+    }
+    .launch-sec span {
+        font-size: 14px;
+    }
+    .launch-sec h3 {
+        font-size: 14px;
+    }
+    .five-sec {
+        font: 10px;
+    }
+    .next-launch-hold {
+        margin: 0 50px;
+    }
+    /*  ---card*/
+    .card-hold {
+        gap:50px;
+    }
+    .card-content {
+        width: 300px;
+    }
+    .planet {
+        width: 190px;
+        height:190px;
+    }
+    .planet-cart-content {
+        top: 26%;
+    }
+    .planet-cart-content button {
+        margin-top: 160px;
+    }
+    /* fetured sec---- */
+    .featured-sec {
+        padding: 140px 0;
+    }
+    .planet-discover-sec {
+        padding: 0 60px;
+    }
+    .p-name-ul {
+        gap:40px;
+    }
+    .p-name-li {
+        font-size: 17px;
+    }
+    .planet-info-hold {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .p-info-box {
+        padding: 12px;
+    }
+    /*---------image section */
+    .image-gallery-sec {
+        margin-top: 40%;
+    }
+    .img-frame-box1{
+        width: 28%;
+    }
+    .img-frame-box2, .img-frame-box4 {
+        left: 305px;
+    }
+    .img-frame-box3 {
+        width: 31%;
+    }
+    .g-info-box span {
+        font-size: 14px;
+    }
+    .g-info-box h1 {
+        font-size: 18px;
+    }
+    .l-btn3 {
+        width: 50px;
+    }
+    .l-btn3 i {
+        font-size: 25px;
+    }
+    .img-gallery-info {
+        margin-left: 32%;
+    }
+    .gallery-info-contain2 {
+        padding: 30px 0;
+        font-size: 13px;
+    }
+    .info-box h1, .p-info-box h1 {
+        font-size: 21px;
+        font-weight: 500;
+    }
+    .info-box span, .p-info-box span {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .bottom-box h1, .p-bottom-box h1 {
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .l-btn, .l-btn2 {
+        width: 65px;
+    }
+    .l-btn i, .l-btn2 i {
+        font-size: 30px;
+    }
+    .img-info-d span {
+        font-size: 14px;
+    }
+    .img-info-d {
+        left: -25%;
+        bottom: 0;
+    }
+}
