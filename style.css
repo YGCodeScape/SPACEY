@@ -217,10 +217,10 @@ html {
     font-weight: 600;
     letter-spacing: 10px;
 }
-/* .land-text-hold h3, .land-text-hold h1, .obj-hold img {
+.land-text-hold h3, .land-text-hold h1, .obj-hold img {
     transform: scale(0);
     opacity: 0;
-} */
+}
 /*-------------------------object  */
 .obj-hold {
     width:200px;
@@ -1017,11 +1017,11 @@ border-left: 1px solid #d6b86d;
 }
 
 /*----------------------------------------- */
-/* @keyframes float {
+@keyframes float {
   0% { transform: translateX(0%) translateY(0px); }
   50% { transform: translateX(0%) translateY(-10px); }
   100% { transform: translateX(0%) translateY(0px); }
-} */
+}
 /*-------------------responsive media queries-------- */
 @media screen and (max-width: 1159px) and (min-width: 960px) {
 
